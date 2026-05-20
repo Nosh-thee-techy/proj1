@@ -1,0 +1,16 @@
+{
+  "name": "proj1",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client:dev": "npm --workspace client run dev",
+    "client:build": "npm --workspace client run build",
+    "client:lint": "npm --workspace client run lint",
+    "client:preview": "npm --workspace client run preview",
+    "server:test": "npm --workspace server run test"
+  }
+}

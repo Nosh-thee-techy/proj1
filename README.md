@@ -1,16 +1,33 @@
-# React + Vite
+# proj1 Monorepo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is organized as a simple monorepo with separate frontend and backend folders.
 
-Currently, two official plugins are available:
+## Folder structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `client/` - React frontend built with Vite
+- `server/` - backend placeholder and server-side code
 
-## React Compiler
+## Workspace setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies from the repository root:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Useful scripts
+
+From the repository root:
+
+```bash
+npm run client:dev
+npm run client:build
+npm run client:preview
+npm run client:lint
+npm run server:test
+```
+
+## Notes
+
+- The frontend app lives in `client/`.
+- The backend currently has a minimal `server/package.json` and can be expanded with server code.
